@@ -20,6 +20,15 @@ import {
 const Details = ({ route, navigation }) => {
 	const { data } = route.params;
 
+	const DetailsHeader = (data, navigation) => (
+		<View
+			style={{
+				width: "100%",
+				height: 373,
+			}}>
+			<Image source={data.image} />
+		</View>
+	);
 	return (
 		<SafeAreaView style={{ flex: 1 }}>
 			<FocusedStatusBar
@@ -52,7 +61,10 @@ const Details = ({ route, navigation }) => {
 				contentContainerStyle={{ paddingBottom: SIZES.extraLarge * 3 }}
 				ListHeaderComponent={() => (
 					<React.Fragment>
-						<DetailsHeader />
+						<DetailsHeader
+							data={data}
+							navigation={navigation}
+						/>
 					</React.Fragment>
 				)}
 			/>
