@@ -16,7 +16,8 @@ import {
 	DetailsBid,
 } from "../components";
 
-const Details = () => {
+const Details = ({ route, navigation }) => {
+	console.log(route);
 	return <Text>Details</Text>;
 };
 
