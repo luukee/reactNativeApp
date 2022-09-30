@@ -75,7 +75,16 @@ const HomeHeader = () => {
 				style={{
 					marginTop: SIZES.font,
 				}}>
-				<View>
+				<View
+					style={{
+						width: "100%",
+						borderRadius: SIZES.font,
+						backgroundColor: COLORS.gray,
+						flexDirection: "row",
+						alignItems: "center",
+						paddingHorizontal: SIZES.font,
+						paddingVertical: SIZES.small - 2,
+					}}>
 					<Image
 						source={assets.search}
 						resizeMode="contain"
@@ -84,6 +93,13 @@ const HomeHeader = () => {
 							height: 20,
 							marginRight: SIZES.base,
 						}}
+					/>
+					<TextInput
+						placeholder="Search NFTs"
+						style={{
+							flex: 1,
+						}}
+						onChange={() => {}}
 					/>
 				</View>
 			</View>
