@@ -1,3 +1,4 @@
+import React from "react";
 import {
 	View,
 	Text,
@@ -45,7 +46,15 @@ const Details = ({ route, navigation }) => {
 			</View>
 			<FlatList
 				data={data.bids}
-				renderItem={({ item }) => <DetailsBid />}
+				renderItem={({ item }) => <DetailsBid bid={item} />}
+				keyExtractor={(item) => item.id}
+				showsVerticalScrollIndicator={false}
+				contentContainerStyle={{ paddingBottom: SIZES.extraLarge * 3 }}
+				ListHeaderComponent={() => (
+					<React.Fragment>
+						<DetailsHeader />
+					</React.Fragment>
+				)}
 			/>
 		</SafeAreaView>
 	);
