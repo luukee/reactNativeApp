@@ -83,6 +83,7 @@ const Details = ({ route, navigation }) => {
 							data={data}
 							navigation={navigation}
 						/>
+						<SubInfo />
 					</React.Fragment>
 				)}
 			/>
