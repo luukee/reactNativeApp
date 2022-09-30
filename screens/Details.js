@@ -43,6 +43,10 @@ const Details = ({ route, navigation }) => {
 					{...SHADOWS.dark}
 				/>
 			</View>
+			<FlatList
+				data={data.bids}
+				renderItem={({ item }) => <DetailsBid />}
+			/>
 		</SafeAreaView>
 	);
 };
