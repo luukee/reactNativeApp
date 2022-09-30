@@ -61,6 +61,15 @@ const HomeHeader = () => {
 					}}>
 					Hello, Victoria 👋
 				</Text>
+				<Text
+					style={{
+						fontFamily: FONTS.bold,
+						fontSize: SIZES.large,
+						color: COLORS.white,
+						marginTop: SIZES.base / 2,
+					}}>
+					Let's find a masterpiece
+				</Text>
 			</View>
 		</View>
 	);
