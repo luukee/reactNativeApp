@@ -35,7 +35,6 @@ const NFTCard = ({ data }) => {
 				/>
 			</View>
 			<SubInfo />
-			<Text>NFTCard</Text>
 		</View>
 	);
 };

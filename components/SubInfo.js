@@ -1,5 +1,5 @@
 import { View, Text } from "react-native";
-import React from "react";
+import { COLORS, SIZES, SHADOWS, assets } from "../constants";
 
 export const NFTTitle = () => {
 	return (
@@ -27,7 +27,7 @@ export const ImageCmp = () => {
 
 export const People = () => {
 	return (
-		<View>
+		<View style={{ flexDirection: "row" }}>
 			<Text>People</Text>
 		</View>
 	);
@@ -43,8 +43,16 @@ export const EndDate = () => {
 
 export const SubInfo = () => {
 	return (
-		<View>
-			<Text>SubInfo</Text>
+		<View
+			style={{
+				width: "100%",
+				paddingHorizontal: SIZES.font,
+				marginTop: -SIZES.extraLarge,
+				flexDirection: "row",
+				justifyContent: "space-between",
+			}}>
+			<People />
+			<EndDate />
 		</View>
 	);
 };
