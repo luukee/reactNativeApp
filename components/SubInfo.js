@@ -13,6 +13,14 @@ export const NFTTitle = ({ title, subTitle, titleSize, subTitleSize }) => {
 				}}>
 				{title}
 			</Text>
+			<Text
+				style={{
+					fontFamily: FONTS.regular,
+					fontSize: subTitleSize,
+					color: COLORS.primary,
+				}}>
+				{subTitle}
+			</Text>
 		</View>
 	);
 };
