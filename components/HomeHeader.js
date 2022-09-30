@@ -49,6 +49,19 @@ const HomeHeader = () => {
 					/>
 				</View>
 			</View>
+			<View
+				style={{
+					marginVertical: SIZES.font,
+				}}>
+				<Text
+					style={{
+						fontFamily: FONTS.regular,
+						fontSize: SIZES.small,
+						color: COLORS.white,
+					}}>
+					Hello, Victoria 👋
+				</Text>
+			</View>
 		</View>
 	);
 };
