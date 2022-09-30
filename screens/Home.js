@@ -13,6 +13,11 @@ const Home = () => {
 		const filteredData = NFTData.filter((item) =>
 			item.name.toLowerCase().includes(value.toLowerCase())
 		);
+		if (filteredData.length) {
+			setNftData(filteredData);
+		} else {
+			setNftData(NFTData);
+		}
 	};
 
 	return (
