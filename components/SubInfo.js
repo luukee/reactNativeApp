@@ -28,7 +28,11 @@ export const ImageCmp = () => {
 export const People = () => {
 	return (
 		<View style={{ flexDirection: "row" }}>
-			<Text>People</Text>
+			{[assets.person02, assets.person03, assets.person04].map(
+				(imgUrl, index) => (
+					<ImageCmp />
+				)
+			)}
 		</View>
 	);
 };
