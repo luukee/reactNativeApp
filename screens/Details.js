@@ -72,6 +72,9 @@ const Details = ({ route, navigation }) => {
 				/>
 			</View>
 			<FlatList
+				style={{
+					backgroundColor: COLORS.white,
+				}}
 				data={data.bids}
 				renderItem={({ item }) => <DetailsBid bid={item} />}
 				keyExtractor={(item) => item.id}
