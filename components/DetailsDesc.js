@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { View, Text } from "react-native";
-import React from "react";
 
-const DetailsDesc = () => {
+import { EthPrice, NFTTitle } from "./SubInfo";
+import { COLORS, SIZES, FONTS } from "../constants";
+const DetailsDesc = ({ data }) => {
 	return (
 		<View>
 			<Text>DetailsDesc</Text>

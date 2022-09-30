@@ -84,6 +84,12 @@ const Details = ({ route, navigation }) => {
 							navigation={navigation}
 						/>
 						<SubInfo />
+						<View
+							style={{
+								padding: SIZES.font,
+							}}>
+							<DetailsDesc data={data} />
+						</View>
 					</React.Fragment>
 				)}
 			/>
