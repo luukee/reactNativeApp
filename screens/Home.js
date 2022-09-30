@@ -29,9 +29,17 @@ const Home = () => {
 						zIndex: -1,
 					}}>
 					<View
-						style={{ height: 300, backgroundColor: COLORS.primary }}
+						style={{
+							height: 300,
+							backgroundColor: COLORS.primary,
+						}}
 					/>
-					<View style={{ flex: 1, backgroundColor: COLORS.white }} />
+					<View
+						style={{
+							flex: 1,
+							backgroundColor: COLORS.white,
+						}}
+					/>
 				</View>
 			</View>
 		</SafeAreaView>
