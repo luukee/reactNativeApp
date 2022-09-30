@@ -36,6 +36,13 @@ const Details = ({ route, navigation }) => {
 			<CircleButton
 				imgUrl={assets.left}
 				handlePress={() => navigation.goBack()}
+				left={15}
+				top={StatusBar.currentHeight + 10}
+			/>
+			<CircleButton
+				imgUrl={assets.heart}
+				right={15}
+				top={StatusBar.currentHeight + 10}
 			/>
 		</View>
 	);
