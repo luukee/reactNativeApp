@@ -1,10 +1,20 @@
 import { useState } from "react";
 import { View, SafeAreaView, FlatList, Text } from "react-native";
+
+import { COLORS, NFTData } from "../constants";
 import { NFTCard, HomeHeader, FocusedStatusBar } from "../components";
 
-import { COLOR, COLORS, NFTData } from "../constants";
-
 const Home = () => {
+	const [nftData, setNftData] = useState(NFTData);
+
+	const handleSearch = (value) => {
+		if (!value.lenght) return setNftData(NFTData);
+
+		const filteredData = NFTData.filter((item) =>
+			item.name.toLowerCase().includes(value.toLowerCase())
+		);
+	};
+
 	return (
 		<SafeAreaView style={{ flex: 1 }}>
 			<FocusedStatusBar background={COLORS.primary} />
